@@ -33,4 +33,4 @@ class LinkBudgetImpl(LinkBudget):
         return self.get_Loss_EL() + self.calc_FM() + self.__loss_cables() + self.__loss_conectores()
 
     def get_Rss(self):
-        return self.configuration['Ptx'] + self.configuration['Gtx'] + self.configuration['Grx']- self.get_total_loss()
+        return self.configuration['Ptx'] + self.configuration['Gtx'] + self.configuration['Grx'] - self.get_total_loss()
